@@ -1,0 +1,49 @@
+.home{
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.home h1{
+    font-size: 3em;
+    margin-top: -1rem;
+    animation: 2s fadeLeft;
+}
+
+.home h2{
+    font-size: 1.5em;
+    animation: 2s fadeLeft;
+}
+
+.home h3{
+    font-size: 2rem;
+    margin-top: -1rem;
+    animation: 2s fadeLeft;
+}
+
+@media only screen and (min-width: 1200px) {
+    .home {
+        margin: auto;
+        max-width: 1200px;
+        margin-top: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .home {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 3rem;
+    }
+  }
+
+  @keyframes fadeLeft {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }

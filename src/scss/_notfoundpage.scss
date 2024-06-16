@@ -1,0 +1,76 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    height: 100%;
+    margin-top: 5rem;
+    animation: 2s text-fade;
+}
+
+.not-found h1{
+    margin-bottom: 1rem;
+}
+
+.not-found p{
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+}
+
+.not-found button{
+    width: 6rem;
+    height: 3rem;
+    margin: auto;
+    margin-top: 1.2rem;
+    border: 3px solid $highlight-col;
+    border-radius: 25px;
+    background-color: $background-col;
+    color: $text-col;
+    font-weight: 900;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    animation: 4s button-fade;
+}
+
+.not-found button:hover,
+.not-found button:focus, 
+.not-found button:active{
+    background-color: $highlight-col;
+    box-shadow: 0 0 3px $highlight-col;
+    color: $background-col;
+}
+
+@keyframes text-fade {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
+
+@keyframes button-fade {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+      pointer-events: none;
+      cursor:none;
+    }
+    50%{
+        transform: translateY(50px);
+      opacity: 0;
+      pointer-events: none;
+      cursor:none;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+      pointer-events:all;
+      cursor: pointer;
+    }
+  }

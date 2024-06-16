@@ -1,0 +1,59 @@
+@import './colours';
+@import './header';
+@import './home';
+@import './about-me';
+@import './notfoundpage';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding-top: 8rem;
+    font-family: "Roboto", sans-serif;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #676060 1px, $background-col 1px);
+    color: $text-col;
+}
+
+.highlighted-1{
+    color: $highlight-col;
+}
+
+.highlighted-2{
+    color: $background-col;
+    background-image: linear-gradient($highlight-col, $highlight-col);
+    background-size: 100% 100%;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    animation: 2s fadeHighlight ease-in-out;
+}
+
+@keyframes fadeHighlight {
+    0% {
+        background-size: 0% 100%;
+    }
+    60%{
+        background-size: 0% 100%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+  }
+
+
+::selection {
+    color: $background-col;
+    background: $primary-col;
+}
+
+.vignette{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 25px 25px 500px #000000 inset;
+    z-index: -1;
+}
+
+$mobile-width: 800px;
