@@ -1,5 +1,6 @@
 .what-i-know{
     margin: 5rem;
+    animation: 0.5s fadeUp;
 }
 
 .what-i-know h1{
@@ -40,3 +41,14 @@
     border: 2px solid $highlight-col;
     transform: translateY(-1rem);
 }
+
+@keyframes fadeUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
