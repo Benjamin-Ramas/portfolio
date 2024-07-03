@@ -68,7 +68,7 @@ function Header (){
                         <li className="styled-underline mobile-only"><Link to="/experience" className="headerlink"><button className="redirect-button"onClick={() => {setnavLinkExpand("hidden")}}>Experience</button></Link></li>
 
                         <li className="styled-underline desktop-only"><Link to="/contact" className="headerlink">Contact</Link></li>
-                        <li className="styled-underline mobile-only"><Link to="/contact" className="headerlink"><button className="redirect-button">Contact</button></Link></li>
+                        <li className="styled-underline mobile-only"><Link to="/contact" className="headerlink"><button className="redirect-button" onClick={() => {setnavLinkExpand("hidden")}}>Contact</button></Link></li>
 
                         <li className="resume-button"><a>Resume</a></li>
                     </ul>
@@ -76,7 +76,7 @@ function Header (){
                 <button 
                   className="hamburger-menu"
                   onClick={expandLink}
-                  >TEST</button>
+                  ><img className="hamburger-icon" src="./burger-menu-right-svgrepo-com.svg" /></button>
             </header>
         </>
     )
