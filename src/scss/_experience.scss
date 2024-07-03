@@ -1,45 +1,14 @@
-.what-i-know{
-    margin: 5rem;
-    animation: 0.5s fadeUp;
+.experience-section{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
-.what-i-know h1{
-    margin-left: 2rem;
-    font-size: 3em;
-    font-weight: 900;
-}
-
-.knowledge-card-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.knowledge-card{
-    border: 2px solid $text-col;
-    padding: 1rem;
-    padding-top: 0;
-    margin: 2rem;
-    width: 14rem;
-    height: 14rem;
-    transition-duration: 1s;
-    backdrop-filter: blur(10px);
-}
-
-.knowledge-card ul{
-    list-style:inside;
-    margin-left: 0;
-}
-
-.knowledge-card li{
-    margin-left: -1.5rem;
-}
-
-.knowledge-card:hover{
-    border: 2px solid $highlight-col;
-    transform: translateY(-1rem);
+.experience-details{
+    border-left: 2px $text-col solid;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
 }
 
 @keyframes fadeUp {
