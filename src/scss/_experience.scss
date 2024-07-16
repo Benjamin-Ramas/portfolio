@@ -20,6 +20,7 @@
   padding-left: 1rem;
   color: $highlight-col;
   border-color: $highlight-col;
+  border-left: 3px $highlight-col solid;
 }
 
 @keyframes fadeUp {

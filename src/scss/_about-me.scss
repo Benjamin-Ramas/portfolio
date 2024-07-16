@@ -1,8 +1,12 @@
+.about-page{
+  display: flex;
+}
+
 .about-me{
-    margin-left: 5rem;
-    margin-right: 5rem;
-    max-width: 800px;
-    animation: 1s fadeUp;
+  max-width: 700px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  animation: 1s fadeUp;
 }
 
 .about-me p{
@@ -22,6 +26,38 @@
 
 .about-me li{
     margin-bottom: 1rem;
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+}
+
+.portrait-1{
+  display: block;
+  width: 300px;
+  position: relative;
+  left: 150px;
+  top: 75px;
+  transform: rotate(5deg);
+  z-index: 1;
+  box-shadow: 15px 5px 0px 0px $highlight-col;
+}
+
+.portrait-1:before{
+  box-shadow: 25px 30px 0px 0px $highlight-col;
+  z-index: -1;
+}
+
+.shrimp-1{
+  display: block;
+  display: block;
+  width: 200px;
+  position: relative;
+  left: 100px;
+  transform: rotate(-5deg);
+  z-index: 0;
+  box-shadow: -15px 5px 0px 0px $highlight-col;
 }
 
   @media only screen and (max-width: 600px) {

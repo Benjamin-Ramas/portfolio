@@ -1,5 +1,6 @@
 import { useLocation, Link} from "react-router-dom";
 import { useState, useEffect } from "react";
+import HamburgerMenu from "./hamburger_menu";
 
 function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState("");
@@ -70,13 +71,10 @@ function Header (){
                         <li className="styled-underline desktop-only"><Link to="/contact" className="headerlink">Contact</Link></li>
                         <li className="styled-underline mobile-only"><Link to="/contact" className="headerlink"><button className="redirect-button" onClick={() => {setnavLinkExpand("hidden")}}>Contact</button></Link></li>
 
-                        <a className="resume-button linkless" href="./Resume.pdf"><li>Resume</li></a>
+                        <a className="resume-button linkless" href="./Resume.pdf" target="blank"><li>Resume</li></a>
                     </ul>
                 </nav>
-                <button 
-                  className="hamburger-menu"
-                  onClick={expandLink}
-                  ><img className="hamburger-icon" src="./burger-menu-right-svgrepo-com.svg" /></button>
+                <HamburgerMenu onClick={expandLink} />
             </header>
         </>
     )
