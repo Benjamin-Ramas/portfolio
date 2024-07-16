@@ -5,6 +5,7 @@ import AboutMe from './tsx/page/about-me'
 import NotFound from './tsx/page/not-found'
 import Header from './tsx/components/header'
 import Experience from './tsx/page/experience'
+import ContactMe from './tsx/page/contact-me'
 import './css/main.css'
 import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Home />} />
         <Route path='/about-me' element={<AboutMe />}/>
         <Route path='/experience' element={<Experience />}/>
+        <Route path='/contact' element={<ContactMe />}/>
         <Route path="/error" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/error" />} />
       </Routes>

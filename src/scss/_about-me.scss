@@ -2,7 +2,7 @@
     margin-left: 5rem;
     margin-right: 5rem;
     max-width: 800px;
-    animation: 1s fadeLeft;
+    animation: 1s fadeUp;
 }
 
 .about-me p{
@@ -32,7 +32,7 @@
     }
   }
 
-  @keyframes fadeLeft {
+  @keyframes fadeUp {
     0% {
       transform: translateY(50px);
       opacity: 0;

@@ -1,0 +1,39 @@
+.main-contact{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    max-width: 40rem;
+    animation: 1s fadeUp;
+}
+
+.main-contact h1{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.main-contact p{
+    margin-top: 1rem;
+    font-size: 1.5em;
+}
+
+.main-contact button{
+    background-color: $background-col;
+    color: $text-col;
+    font-size: 1.25em;
+    font-weight: 900;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    border: 2.5px solid $highlight-col;
+    cursor: pointer;
+
+    transition-duration: 0.25s;
+}
+
+.main-contact button:hover,
+.main-contact button:active,
+.main-contact button:focus{
+    background-color: $highlight-col;
+    color: $background-col;
+    box-shadow: 1;
+    box-shadow: 0 0 3px $highlight-col;
+}
