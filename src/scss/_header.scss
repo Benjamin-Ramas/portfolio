@@ -70,9 +70,14 @@ header h1{
 .resume-button{
     border: 3px solid $highlight-col;
     border-radius: 25px;
-    padding: 0.5rem 1rem;
+    padding: 0rem;
     cursor: pointer;
     transition-duration: 0.25s;
+}
+
+.resume-button li{
+    padding: 0;
+    margin: 0.75rem 1.25rem;
 }
 
 .resume-button:hover,
@@ -135,10 +140,15 @@ header h1{
 @media only screen and (max-width: 750px) {
     .resume-button{
         border: 3px solid $highlight-col;
-        border-radius: 25px;
         padding: 1rem 1rem;
         cursor: pointer;
         transition-duration: 0.25s;
+        width: 100%;
+    }
+    .resume-button li{
+        margin: auto;
+        justify-content: center;
+        text-align: center;
     }
     .header_links{
         position: absolute;

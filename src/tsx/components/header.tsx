@@ -70,7 +70,7 @@ function Header (){
                         <li className="styled-underline desktop-only"><Link to="/contact" className="headerlink">Contact</Link></li>
                         <li className="styled-underline mobile-only"><Link to="/contact" className="headerlink"><button className="redirect-button" onClick={() => {setnavLinkExpand("hidden")}}>Contact</button></Link></li>
 
-                        <li className="resume-button"><a>Resume</a></li>
+                        <a className="resume-button linkless" href="./Resume.pdf"><li>Resume</li></a>
                     </ul>
                 </nav>
                 <button 
