@@ -15,6 +15,7 @@ header{
     top: 0;
     animation: 2s fadeDown;
     transition-duration: 0.25s;
+    z-index: 2;
 }
 
 header h1{

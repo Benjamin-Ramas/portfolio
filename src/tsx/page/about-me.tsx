@@ -2,6 +2,10 @@ function AboutMe () {
     return(
         <>
         <section className="about-page">
+        <div className="images">
+            <img className="portrait-1" src="./portrait-1.jpg" />
+            <img className="shrimp-1" src="./shrimp.jpg" />
+        </div>
             <div className='about-me'>
                 <h1 className="page-title">About Me</h1>
                 <div className="main-about">
@@ -20,10 +24,6 @@ function AboutMe () {
                     <li>Godot Game Engine</li>
                 </ul>
             </div>
-        <div className="images">
-            <img className="portrait-1" src="./portrait-1.jpg" />
-            <img className="shrimp-1" src="./shrimp.jpg" />
-        </div>
         </section>
         </>
     )
