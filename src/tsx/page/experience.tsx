@@ -7,8 +7,8 @@ function Experience () {
                 <a className="linkless" href="https://www.roslinct.com/" target="blank">
                     <div className="experience-details">
                         <h2>Data Analyst at RoslinCT</h2>
-                        <h3>February 2024 - Present</h3>
-                        <p>I am currently working at RoslinCT as a Data Analyst providing my knowledge and skills in assisting with developing systems in which data could be used more efficiently.</p>
+                        <h3>February 2024 - December 2024</h3>
+                        <p>I worked at RoslinCT as a Data Analyst providing my knowledge and skills in assisting with developing systems in which data could be used more efficiently.</p>
                     </div>
                 </a>
             </section>
